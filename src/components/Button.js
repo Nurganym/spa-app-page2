@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@material-ui/core";
+import { BrowserRouter, Link } from "react-router-dom";
 
 class  ProtectedButton extends React.Component {
 
@@ -9,8 +10,15 @@ class  ProtectedButton extends React.Component {
 
     const weeks = weeksDayNames.map(function(name) {
          return(
+        
              <div key={name}  className="weeksDayNames-btn">
-                <Button  className="btn" variant="outlined">{name}</Button>
+                 <BrowserRouter>
+                 <Link to="page1">
+                <Button  className="btn" variant="outlined">
+                    {name}
+                </Button>
+                </Link>
+                </BrowserRouter>
              </div>
          )
              
