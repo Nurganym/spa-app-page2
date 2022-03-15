@@ -12,7 +12,7 @@ import ProtectedButton from "./Button";
          return(
              <div className="todo">
         <Typography variant="6">
-            <h1>Запланировано</h1>
+            <h1>Дни недели:</h1>
             <div>
                 <ProtectedButton />
             </div>
